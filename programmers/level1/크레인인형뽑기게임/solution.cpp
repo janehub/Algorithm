@@ -5,8 +5,8 @@ using namespace std;
 
 int solution(vector<vector<int>> board, vector<int> moves) {
     int answer = 0;
-    vector<int> basket;
-    int doll;
+    vector<int> basket;	/* 바구니 */
+    int doll;	/* 뽑은인형 */
     
     for(int i=0;i<moves.size();i++){
     	
@@ -15,6 +15,7 @@ int solution(vector<vector<int>> board, vector<int> moves) {
 			if(doll!=0){
 				if(basket.size()==0)
 				{
+					/* 바구니에 넣기 */
 					basket.push_back(doll);
 				}
 				else
@@ -22,17 +23,18 @@ int solution(vector<vector<int>> board, vector<int> moves) {
 					/*비교연산*/
 					if(basket.back()==doll)
 					{
-						/*바스켓에서 제거*/
+						/*바구니에서 제거*/
 						basket.pop_back();
 						answer+=2;
 					}
 					else
 					{	
-					/* 바스켓에 넣기 */
+					/* 바구니에 넣기 */
 					basket.push_back(doll);
 					}
 				}
 				
+				/* 꺼내기 */
 				board.at(j).at(moves.at(i)-1) = 0;
 				
 				break;
