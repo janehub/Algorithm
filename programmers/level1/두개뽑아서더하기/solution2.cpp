@@ -15,7 +15,6 @@ using namespace std;
 vector<int> solution(vector<int> numbers) {
     vector<int> answer;
     int sum=0;
-    bool exist=false;
     set<int> memo;
     
     for(int i=0;i<numbers.size()-1;i++){
