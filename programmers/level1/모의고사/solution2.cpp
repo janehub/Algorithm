@@ -22,8 +22,10 @@ vector<int> solution(vector<int> answers) {
             cnts[2]++;
     }
     
+    /* 최댓값구하기 */
     max=*max_element(cnts,cnts+3);
     
+    /*  */
     for(int i=0;i<3;i++)
     {
         if(cnts[i]>=max)
