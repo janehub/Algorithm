@@ -1,4 +1,4 @@
-<h1><a = "https://programmers.co.kr/learn/courses/30/lessons/12917">문자열 내림차순으로 배치하기</a></h1>
+<h1><a href= "https://programmers.co.kr/learn/courses/30/lessons/12917">문자열 내림차순으로 배치하기</a></h1>
 
 <h6>문제 설명</h6>
 <p>문자열 s에 나타나는 문자를 큰것부터 작은 순으로 정렬해 새로운 문자열을 리턴하는 함수, solution을 완성해주세요.<br>
