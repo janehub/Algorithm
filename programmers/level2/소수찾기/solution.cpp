@@ -1,3 +1,6 @@
+/*
+제곱근
+*/
 #include <string>
 #include <vector>
 #include <cstdlib>
