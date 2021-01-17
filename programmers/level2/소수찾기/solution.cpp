@@ -30,7 +30,7 @@ void isSosu()
 	else if(num==2){    //2는 소수
 		chk[num]=true;
 		answer++;
-        return;
+        	return;
 	}else{
 		for(int i=2;i*i<=num;i++) //N의 약수는 무조건 sqrt(N)의 범위에 존재
 		{
@@ -68,12 +68,12 @@ void permutation(int cnt,int digit, string s)
 int solution(string numbers) {
     answer = 0;
     fill_n(selected,10,false);
-	fill_n(chk,10000000,false);
+    fill_n(chk,10000000,false);
 
-	for(int i=0;i<numbers.length();i++)
-	{
-		permutation(0,i+1,numbers);
-	}
+    for(int i=0;i<numbers.length();i++)
+    {
+	permutation(0,i+1,numbers);
+    }
 
     return answer;
 }
