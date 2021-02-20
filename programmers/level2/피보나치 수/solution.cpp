@@ -1,3 +1,8 @@
+/*
+int 자료형 범위.
+(A + B)%C = (A%C + B%C)%C
+*/
+
 #include <string>
 #include <vector>
 #include <iostream>
