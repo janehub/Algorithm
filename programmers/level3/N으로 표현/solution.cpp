@@ -61,9 +61,11 @@ class Solution {
                 }
                     
             }
-            set2.add(getN(N,i));
+            int NN= getN(N,i);
+            if(NN==number)
+                return i;
+            set2.add(NN);
             list[i] = set2;
-            System.out.println();
         }
         
         return -1;
