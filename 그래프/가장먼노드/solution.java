@@ -7,7 +7,7 @@ class Solution {
         int[] dist = new int[n+1];  //거리
         boolean[] visit = new boolean[n+1]; //방문여부
         ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
-        for(int i=0;i<edge.length;i++){
+        for(int i=0;i<n+1;i++){
             list.add(new ArrayList<Integer>());
         }
         
@@ -37,14 +37,14 @@ class Solution {
         }
         
         int max = 0;
-        for(int i=0;i<dist.length;i++)
+        for(int i=2;i<dist.length;i++)
         {
             if(dist[i]>max)
             {
                 max = dist[i];
                 answer=1;
             }
-            else{
+            else if(dist[i]==max){
                 answer++;
             }
             
